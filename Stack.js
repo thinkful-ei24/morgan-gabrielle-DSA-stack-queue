@@ -25,6 +25,10 @@ class Stack {
   }
 
   pop() {
+    if (!this.top) {
+      return null;
+    }
+
     const node = this.top;
     this.top = node.next;
 
@@ -32,20 +36,21 @@ class Stack {
   }
 }
 
-// function main() {
-//   const starTrek = new Stack();
+function main() {
+  const starTrek = new Stack();
 
-//   starTrek.push("Kirk");
-//   starTrek.push("Spock");
-//   starTrek.push("McCoy");
-//   starTrek.push("Scotty");
-//   starTrek.pop();
+  // starTrek.push('Kirk');
+  // starTrek.push('Spock');
+  // starTrek.push('McCoy');
+  // starTrek.push('Scotty');
+  // starTrek.pop();
 
-//   peek(starTrek);
-//   console.log("====");
-//   display(starTrek);
-// }
+  // peek(starTrek);
+  // console.log('====');
+  // display(starTrek);
+  starTrek.pop();
+}
 
-// main();
+main();
 
 module.exports = Stack;
