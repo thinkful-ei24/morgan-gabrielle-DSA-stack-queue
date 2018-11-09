@@ -1,4 +1,4 @@
-const { peek, display } = require('./helpers');
+const { peek, display } = require("./helpers");
 
 class Node {
   constructor(data, next) {
@@ -32,20 +32,20 @@ class Stack {
   }
 }
 
-function main() {
-  const starTrek = new Stack();
+// function main() {
+//   const starTrek = new Stack();
 
-  starTrek.push('Kirk');
-  starTrek.push('Spock');
-  starTrek.push('McCoy');
-  starTrek.push('Scotty');
-  starTrek.pop();
+//   starTrek.push("Kirk");
+//   starTrek.push("Spock");
+//   starTrek.push("McCoy");
+//   starTrek.push("Scotty");
+//   starTrek.pop();
 
-  peek(starTrek);
-  console.log('====');
-  display(starTrek);
-}
+//   peek(starTrek);
+//   console.log("====");
+//   display(starTrek);
+// }
 
-main();
+// main();
 
-exports.default = Stack;
+module.exports = Stack;

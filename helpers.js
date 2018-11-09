@@ -3,7 +3,7 @@ function peek(stack) {
     return null;
   }
 
-  console.log(stack.top.data);
+  return stack.top.data;
 }
 
 function display(stack) {
@@ -12,11 +12,12 @@ function display(stack) {
   if (!stack.top) {
     return null;
   }
-
+  const result = [];
   while (counter) {
-    console.log(counter.data);
+    result.push(counter.data);
     counter = counter.next;
   }
+  console.log(result);
 }
 
 module.exports = {
