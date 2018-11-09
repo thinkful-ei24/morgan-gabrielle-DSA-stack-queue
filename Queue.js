@@ -26,7 +26,7 @@ class Queue {
 
   dequeue() {
     if (!this.tail) {
-      console.log('Empty queue');
+      console.log("Empty queue");
       return null;
     }
 
@@ -73,14 +73,14 @@ function display(queue) {
 function main() {
   const queue = new Queue();
 
-  queue.enqueue('hello');
-  queue.enqueue('goodbye');
+  queue.enqueue("hello");
+  queue.enqueue("goodbye");
   queue.dequeue();
 
   console.log(peek(queue));
   console.log(display(queue));
 }
 
-main();
+// main();
 
 module.exports = Queue;
