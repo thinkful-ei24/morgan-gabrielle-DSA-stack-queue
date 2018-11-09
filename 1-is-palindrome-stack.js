@@ -1,8 +1,8 @@
-const Stack = require("./Stack");
-const { display, peek } = require("./helpers");
+const Stack = require('./Stack');
+const { display, peek } = require('./helpers');
 
 function is_palindrome(s) {
-  s = s.toLowerCase().replace(/[^a-zA-Z0-9]/g, "");
+  s = s.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
   const stack = new Stack();
   const n = s.length;
 

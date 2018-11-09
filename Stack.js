@@ -1,4 +1,4 @@
-const { peek, display } = require("./helpers");
+const { peek, display } = require('./helpers');
 
 class Node {
   constructor(data, next) {
